@@ -17,7 +17,7 @@
 # -DUSE_LUA               - embed Lua in Civetweb (+100kb)
 
 PROG        = civetweb
-CFLAGS      = -std=c99 -O2 -W -Wall -pedantic -pthread -pipe -Iinclude $(COPT)
+CFLAGS      = -std=c99 -fPIC -O2 -W -Wall -pedantic -pthread -pipe -Iinclude $(COPT)
 
 # To build with Lua, download and unzip Lua 5.2.3 source code into the
 # civetweb directory, and then add $(LUA_SOURCES) to CFLAGS
